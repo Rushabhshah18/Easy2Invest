@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.model">
+	<class name="investor" table="investor">
+		<id column="id" name="id">
+			<generator class="increment"></generator>
+		</id>
+		<property column="first_name" name="firstname"></property>
+		<property column="last_name" name="lastname"></property>
+		<property column="zipcode" name="zipcode"></property>
+		<property column="email" name="email"></property>
+		<property column="Address" name="address"></property>
+		<!-- <property column="Address_personal" name="Address_personal"></property> -->
+		<property column="Address_optional" name="Address_optional"></property>
+		<property column="password" name="password"></property>
+		<property column="gender" name="gender"></property>
+		<property column="birthdate" name="birthdate"></property>	
+			<property column="created_date" name="created_date"></property>	
+		<property column="updated_date" name="updated_date"></property>
+		<!-- <property column="otp" name="otp"></property> -->	
+	</class>
+</hibernate-mapping>

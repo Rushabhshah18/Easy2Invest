@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.model">
+	<class name="idea" table="idea">
+		<id column="id" name="id">
+			<generator class="increment"></generator>
+		</id>
+		<property column="entreprenureName" name="entreprenureName"></property>
+		<property column="abstractIdea" name="abstractIdea"></property>
+		<property column="city" name="city"></property>
+		<property column="email" name="email"></property>
+		<property column="amount" name="amount"></property>
+		<property column="active_flag" name="activeFlag"></property>
+		<property column="Idea" name="idea"></property>
+		
+		<property column="created_date" name="created_date"></property>	
+		<property column="updated_date" name="updated_date"></property>
+	
+	</class>
+</hibernate-mapping>
